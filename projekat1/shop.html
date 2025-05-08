@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Korpa za kupovinu auta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="icon" type="image/x-icon" href="slike/korpa.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kupi auto iz snova</h1>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="auti.html">Automobili</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="cart">
+        <div class="form-wrapper">
+            <h2>Korpa za kupovinu auta</h2>
+            <form action="http://localhost/projekat1/provera.php" method="post">
+                <div class="form-group">
+                    <label for="product">Automobili:</label>
+                    <select id="product" name="product">
+                        <option value="Porsche_911_GT2_RS">Porsche 911 GT2 RS - $525000</option>
+                        <option value="Porsche_918_Spyder">Porsche 918 Spyder - $500000</option>
+                        <option value="Porsche_911_GT3_R">Porsche 911 GT3 R - $195000</option>
+                        <option value="Porsche_Macan_GTS">Porsche Macan GTS - $77880</option>
+                    </select>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Količina:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="name">Ime:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Prezime:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Datum rođenja:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Pol:</label>
+                    <label><input type="radio" name="gender" value="muški" required> Muški</label>
+                    <label><input type="radio" name="gender" value="ženski"> Ženski</label>
+                    <label><input type="radio" name="gender" value="ostalo"> Ostalo</label>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Način plaćanja:</label>
+                    <select id="payment" name="payment">
+                        <option value="visa">VISA</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="amex">Porshe Card</option>
+                    </select>
+                </div>
+                <button class="confirm-btn" type="submit">Nabavite svoj auto</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Porsche Shop. Sva prava zadržana. &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>

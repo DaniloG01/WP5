@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="slike/kontakt.png">
+    <style>
+        .contact {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .contact h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .contact p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .contact form {
+            margin-top: 20px;
+        }
+
+        .contact form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .contact form input[type="text"],
+        .contact form input[type="email"],
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        .contact form textarea {
+            height: 150px;
+        }
+
+        .contact form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .contact form input[type="submit"]:hover {
+            background-color: #0fd5f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kontaktirajte nas</h1>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="auti.html">Automobili</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contact">
+        <div class="container">
+            <h2>Kontaktirajte Nas</h2>
+            <p>Imate pitanje ili vam je potrebna pomoć? Koristite formu ispod da nam pošaljete poruku.</p>
+            <form method="post" action="potvrda.php">
+                <label for="name">Ime:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="subject">Naslov:</label>
+                <input type="text" id="subject" name="subject" required>
+              
+                <label for="message">Poruka:</label>
+                <textarea id="message" name="message" required></textarea>
+              
+                <input type="submit" value="Pošaljite">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Porsche Shop. Sva prava zadržana. &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>
